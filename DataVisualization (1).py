@@ -4,8 +4,7 @@ from collections import defaultdict
 import matplotlib.pyplot as plt
 
 class DataVisualization:
-    def __init__(self, workout_tracker: WorkoutTracker, nutrition_tracker: NutritionTracker, 
-                 health_metrics: HealthMetrics, fitness_goals: FitnessGoals):
+    def __init__(self, workout_tracker, nutrition_tracker, health_metrics, fitness_goals):
         self.workout_tracker = workout_tracker
         self.nutrition_tracker = nutrition_tracker
         self.health_metrics = health_metrics
@@ -166,3 +165,4 @@ class DataVisualization:
     def reset_visualizations(self):
         """Reset any stored visualization state (if applicable)."""
         print("Visualizations reset.")
+
